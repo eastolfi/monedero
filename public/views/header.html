@@ -1,0 +1,169 @@
+<!-- TEMPORAL -->
+
+<div class="responsive_tester">
+    <span>
+        <p class="ls">Large Screen</p>
+        <p class="dt">Desktop</p>
+        <p class="tl">Tablet Landscape</p>
+        <p class="tp">Tablet Portrait</p>
+        <p class="ts">Tablet Small</p>
+        <p class="ml">Mobile Landscape</p>
+        <p class="mp">Mobile Portrait</p>
+    </span>
+</div>
+
+<!-- TEMPORAL -->
+
+<div class="container-fluid" data-ng-controller="HeaderController">
+    <!-- Brand Header -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" title="Close to the Sky">
+			<img alt="Close to the Sky" src="/img/logos/logo_24.png" />
+		</a>
+    </div>
+    
+    <!-- Left Navigation -->
+    <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="nav navbar-nav main-navbar">
+            <li data-ng-repeat="item in menu" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
+                <a href="#!/{{item.link}}">{{item.title | translate}}</a>
+            </li>
+            <li data-ng-repeat="item in menuUser" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
+                <a href="#!/{{item.link}}">{{item.title | translate}}</a>
+            </li>
+            <li data-ng-repeat="item in menuAdmin" data-ng-show="global.user.admin" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
+                <a href="#!/{{item.link}}">{{item.title | translate}}</a>
+            </li>
+        </ul>
+        
+        <!-- Right Navigation - Social -->
+		<!--
+        <ul class="nav navbar-nav navbar-right nav-social">
+            <li data-ng-repeat="item in menuSocial" data-ng-hide="item.hidden" >
+                <a href="{{item.link}}" target="_blank">
+                    <span class="{{item.class}}"></span>
+                    <span class="hidden-text">{{item.hidden_text | translate}}</span>
+                </a>
+            </li>
+			<li class="dropdown social-resp">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				    <li data-ng-repeat="item in menuSocialResp" data-ng-hide="item.hidden" >
+                        <a href="{{item.link}}" target="_blank">
+                            <span class="{{item.class}}"></span>
+                            <span class="hidden-text">{{item.hidden_text | translate}}</span>
+                        </a>
+                    </li>
+				</ul>
+			</li>
+		</ul>
+        -->
+        <!-- Right Navigation - Access -->
+        
+        <ul class="navbar-nav nav pull-right" data-ng-hide="global.authenticated">
+            <li>
+                <a href="signup">{{'MENU_SIGNUP' | translate}}</a>
+            </li>
+            <li class="divider-vertical"></li>
+            <li>
+                <a href="signin">{{'MENU_SIGNIN' | translate}}</a>
+            </li>
+        </ul>
+        
+        
+        <!-- Right Navigation - User -->
+        
+        <ul class="navbar-nav nav pull-right nav-user" data-ng-show="global.authenticated">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    				<span class="welcome_user">{{'TEXTO_WELCOME' | translate:welcomeUser}}</span>
+                    <span class="welcome_user_resp">
+                        {{welcomeUser.username}} <span class="glyphicon glyphicon-user" title="Mi cuenta"></span>
+                    </span>
+    				<b class="caret"></b>
+    			</a>
+                <ul class="dropdown-menu">
+                    <li data-ng-repeat="item in menuAdminDropdown" data-ng-show="global.user.admin" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
+                        <a href="#!/{{item.link}}">{{item.title | translate}}</a>
+                    </li>
+                    <li><a href="/signout">{{'MENU_SIGNOUT' | translate}}</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Right Navigation - Language -->
+        <ul class="navbar-nav nav pull-right nav-lang">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img style="width: 24px;" src="img/icons/countries/{{currentCountry}}.ico" />
+                    <span>{{currentLanguage}}</span>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li data-ng-repeat="item in pageLanguages" ng-class="{active: checkCurrentLanguage(item.code)}">
+                        <a href="" ng-click="changeLanguage(item.code)">
+                            <img style="width: 24px;" ng-attr-src="{{item.img()}}" />
+                            <span translate="BUTTON_TEXT_{{item.code}}"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <!-- Right Navigation - Extras -->
+        <!--
+        <ul class="navbar-nav nav pull-right">
+            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img style="" src="img/icons/white/ldpi/ic_action_search.png" />
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <input style="width: 80%" type="text" placeholder="Buscar..." />
+                        <img style="" src="img/icons/black/ldpi/ic_action_search.png" />
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img style="width: 24px;" src="img/icons/countries/{{currentCountry}}.ico" />
+                    {{currentLanguage}}
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li data-ng-repeat="item in pageLanguages" ng-class="{active: checkCurrentLanguage(item.code)}">
+                        <a href="" ng-click="changeLanguage(item.code)">
+                            <img style="width: 24px;" ng-attr-src="{{item.img()}}" />
+                            <span translate="BUTTON_TEXT_{{item.code}}"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="{{currentCurrencyClass}}"></i>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li data-ng-repeat="item in currencies" ng-class="{active: checkCurrentCurrency(item.currency)}">
+                        <a href="" ng-click="changeCurrency(item.currency)">
+                            <i class="{{item.class}}"></i>
+                            <span>{{item.currency}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        -->
+    </div>
+</div>

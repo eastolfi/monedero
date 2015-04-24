@@ -1,0 +1,9 @@
+- Crear los movimientos asociados al premio. Estos no se mostrarán en la lista de movimientos pendientes.
+- Cambiar la pantalla de 'Movimientos Pendientes' para que sea una de 'Operaciones Pendientes'
+    Ahí se mostrarán (con un acordeón?) los movimientos y los premios pendientes.
+- Añadir una propiedad a los premios para que se puedan controlar los que faltan por validar.
+- Al actualizar un premio (la cantidad), hay que actualizar cada uno de los movimientos asociados.
+- No se podrá modificar un premio una vez se haya validado.
+- Añadir los mensajes de cargando y las alertas necesarias.
+- Limpiar y revisar el código.
+- Poner los estilos correctos.

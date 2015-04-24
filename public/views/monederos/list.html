@@ -1,0 +1,8 @@
+<section data-ng-controller="MonederoController" data-ng-init="find()">
+	<div class="row quiniela-list">
+		<div data-ng-repeat="monedero in monederos" class="col-md-11 well well-sm">
+			{{$index}}
+		</div>
+	</div>
+	<h1 data-ng-hide="!quinielas || quinielas.length">{{'NO_QUINIELAS_TEXT' | translate}}</h1>
+</section>

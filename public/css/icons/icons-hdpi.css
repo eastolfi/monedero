@@ -1,0 +1,88 @@
+.icn-lg {
+    display: inline-block;
+	background: url(/img/sprites/icons-hdpi.png) no-repeat top left;
+}
+
+/* HOVER */
+.icn-bandcamp_white.icn-lg:hover, .icn-bandcamp_black.icn-lg:hover{ background-position: 0 0; width: 48px; height: 48px; } 
+.icn-facebook_black.icn-lg:hover, .icn-facebook_white.icn-lg:hover{ background-position: 0 -219px; width: 48px; height: 48px; } 
+.icn-gmail_black.icn-lg:hover, .icn-gmail_white.icn-lg:hover{ background-position: 0 -511px; width: 48px; height: 48px; } 
+.icn-gplus_black.icn-lg:hover, .icn-gplus_white.icn-lg:hover{ background-position: 0 -803px; width: 48px; height: 48px; } 
+.icn-soundcloud_black.icn-lg:hover, .icn-soundcloud_white.icn-lg:hover{ background-position: -73px -584px; width: 48px; height: 48px; } 
+.icn-twitter_black.icn-lg:hover, .icn-twitter_white.icn-lg:hover{ background-position: -146px -438px; width: 48px; height: 48px; } 
+.icn-youtube_black.icn-lg:hover, .icn-youtube_white.icn-lg:hover{ background-position: -146px -949px; width: 48px; height: 48px; } 
+.icn-tumblr_black.icn-lg:hover, .icn-tumblr_white.icn-lg:hover{ background-position: -146px -73px; width: 48px; height: 48px; } 
+
+.icn-bandcamp_blue_light.icn-lg{ background-position: 0 0; width: 48px; height: 48px; } 
+.icn-bandcamp_white.icn-lg{ background-position: 0 -73px; width: 48px; height: 48px; } 
+.icn-bandcamp_black.icn-lg{ background-position: 0 -73px; width: 48px; height: 48px; } /**/
+.icn-facebook_black.icn-lg{ background-position: 0 -146px; width: 48px; height: 48px; } 
+.icn-facebook_blue_dark.icn-lg{ background-position: 0 -219px; width: 48px; height: 48px; } 
+.icn-facebook_blue_light.icn-lg{ background-position: 0 -292px; width: 48px; height: 48px; } 
+.icn-facebook_white.icn-lg{ background-position: 0 -365px; width: 48px; height: 48px; } 
+.icn-gmail_black.icn-lg{ background-position: 0 -438px; width: 48px; height: 48px; } 
+.icn-gmail_red_dark.icn-lg{ background-position: 0 -511px; width: 48px; height: 48px; } 
+.icn-gmail_red_light.icn-lg{ background-position: 0 -584px; width: 48px; height: 48px; } 
+.icn-gmail_white.icn-lg{ background-position: 0 -657px; width: 48px; height: 48px; } 
+.icn-gplus_black.icn-lg{ background-position: 0 -730px; width: 48px; height: 48px; } 
+.icn-gplus_red_dark.icn-lg{ background-position: 0 -803px; width: 48px; height: 48px; } 
+.icn-gplus_red_light.icn-lg{ background-position: 0 -876px; width: 48px; height: 48px; } 
+.icn-gplus_white.icn-lg{ background-position: 0 -949px; width: 48px; height: 48px; } 
+.icn-like_black.icn-lg{ background-position: 0 -1022px; width: 48px; height: 48px; } 
+.icn-like_blue_dark.icn-lg{ background-position: 0 -1095px; width: 48px; height: 48px; } 
+.icn-like_blue_light.icn-lg{ background-position: 0 -1168px; width: 48px; height: 48px; } 
+.icn-like_white.icn-lg{ background-position: 0 -1241px; width: 48px; height: 48px; } 
+.icn-mail_black.icn-lg{ background-position: 0 -1314px; width: 48px; height: 48px; } 
+.icn-mail_white.icn-lg{ background-position: 0 -1387px; width: 48px; height: 48px; } 
+.icn-mail_yellow_dark.icn-lg{ background-position: 0 -1460px; width: 48px; height: 48px; } 
+.icn-mail_yellow_light.icn-lg{ background-position: 0 -1533px; width: 48px; height: 48px; } 
+.icn-overflow_black.icn-lg{ background-position: 0 -1606px; width: 48px; height: 48px; } 
+.icn-overflow_white.icn-lg{ background-position: 0 -1679px; width: 48px; height: 48px; } 
+.icn-paypal_black.icn-lg{ background-position: 0 -1752px; width: 48px; height: 48px; } 
+.icn-paypal_blue_dark.icn-lg{ background-position: 0 -1825px; width: 48px; height: 48px; } 
+.icn-paypal_blue_light.icn-lg{ background-position: 0 -1898px; width: 48px; height: 48px; } 
+.icn-paypal_white.icn-lg{ background-position: 0 -1971px; width: 48px; height: 48px; } 
+.icn-plusone_black.icn-lg{ background-position: -73px 0; width: 48px; height: 48px; } 
+.icn-plusone_red_dark.icn-lg{ background-position: -73px -73px; width: 48px; height: 48px; } 
+.icn-plusone_red_light.icn-lg{ background-position: -73px -146px; width: 48px; height: 48px; } 
+.icn-plusone_white.icn-lg{ background-position: -73px -219px; width: 48px; height: 48px; } 
+.icn-search_black.icn-lg{ background-position: -73px -292px; width: 48px; height: 48px; } 
+.icn-search_white.icn-lg{ background-position: -73px -365px; width: 48px; height: 48px; } 
+.icn-soundcloud_black.icn-lg{ background-position: -73px -438px; width: 48px; height: 48px; } 
+.icn-soundcloud_white.icn-lg{ background-position: -73px -511px; width: 48px; height: 48px; } 
+.icn-soundcloud_yellow_dark.icn-lg{ background-position: -73px -584px; width: 48px; height: 48px; } 
+.icn-soundcloud_yellow_light.icn-lg{ background-position: -73px -657px; width: 48px; height: 48px; } 
+.icn-star_0_black.icn-lg{ background-position: -73px -730px; width: 48px; height: 48px; } 
+.icn-star_0_white.icn-lg{ background-position: -73px -803px; width: 48px; height: 48px; } 
+.icn-star_0_yellow_dark.icn-lg{ background-position: -73px -876px; width: 48px; height: 48px; } 
+.icn-star_0_yellow_light.icn-lg{ background-position: -73px -949px; width: 48px; height: 48px; } 
+.icn-star_10_black.icn-lg{ background-position: -73px -1022px; width: 48px; height: 48px; } 
+.icn-star_10_white.icn-lg{ background-position: -73px -1095px; width: 48px; height: 48px; } 
+.icn-star_10_yellow_dark.icn-lg{ background-position: -73px -1168px; width: 48px; height: 48px; } 
+.icn-star_10_yellow_light.icn-lg{ background-position: -73px -1241px; width: 48px; height: 48px; } 
+.icn-star_5_black.icn-lg{ background-position: -73px -1314px; width: 48px; height: 48px; } 
+.icn-star_5_white.icn-lg{ background-position: -73px -1387px; width: 48px; height: 48px; } 
+.icn-star_5_yellow_dark.icn-lg{ background-position: -73px -1460px; width: 48px; height: 48px; } 
+.icn-star_5_yellow_light.icn-lg{ background-position: -73px -1533px; width: 48px; height: 48px; } 
+.icn-tag_black.icn-lg{ background-position: -73px -1606px; width: 48px; height: 48px; } 
+.icn-tag_white.icn-lg{ background-position: -73px -1679px; width: 48px; height: 48px; } 
+.icn-tags_black.icn-lg{ background-position: -73px -1752px; width: 48px; height: 48px; } 
+.icn-tags_white.icn-lg{ background-position: -73px -1825px; width: 48px; height: 48px; } 
+.icn-tshirt_black.icn-lg{ background-position: -73px -1898px; width: 48px; height: 48px; } 
+.icn-tshirt_white.icn-lg{ background-position: -73px -1971px; width: 48px; height: 48px; } 
+.icn-tumblr_black.icn-lg{ background-position: -146px 0; width: 48px; height: 48px; } 
+.icn-tumblr_blue_dark.icn-lg{ background-position: -146px -73px; width: 48px; height: 48px; } 
+.icn-tumblr_blue_light.icn-lg{ background-position: -146px -146px; width: 48px; height: 48px; } 
+.icn-tumblr_white.icn-lg{ background-position: -146px -219px; width: 48px; height: 48px; } 
+.icn-twitter_black.icn-lg{ background-position: -146px -292px; width: 48px; height: 48px; } 
+.icn-twitter_blue_dark.icn-lg{ background-position: -146px -365px; width: 48px; height: 48px; } 
+.icn-twitter_blue_light.icn-lg{ background-position: -146px -438px; width: 48px; height: 48px; } 
+.icn-twitter_white.icn-lg{ background-position: -146px -511px; width: 48px; height: 48px; } 
+.icn-user_black.icn-lg{ background-position: -146px -584px; width: 48px; height: 48px; } 
+.icn-user_white.icn-lg{ background-position: -146px -657px; width: 48px; height: 48px; } 
+.icn-users_black.icn-lg{ background-position: -146px -730px; width: 48px; height: 48px; } 
+.icn-users_white.icn-lg{ background-position: -146px -803px; width: 48px; height: 48px; } 
+.icn-youtube_black.icn-lg{ background-position: -146px -876px; width: 48px; height: 48px; } 
+.icn-youtube_red_dark.icn-lg{ background-position: -146px -949px; width: 48px; height: 48px; } 
+.icn-youtube_red_light.icn-lg{ background-position: -146px -1022px; width: 48px; height: 48px; } 
+.icn-youtube_white.icn-lg{ background-position: -146px -1095px; width: 48px; height: 48px; } 

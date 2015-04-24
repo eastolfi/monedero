@@ -1,0 +1,20 @@
+<div class="modal-header">
+    <h3 class="modal-title">Importar una quiniela</h3>
+</div>
+
+<div class="modal-body">
+    <form role="form form-inline" id="frm_ingresar" name="form">
+        <div class="form-group has-feedback">
+            <div class="btn-group col-md-offset-1" style="width: 82%;">
+                <textarea rows="10" style="width: 100%" ng-model="data.result" required></textarea>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()" ng-disabled="form.$invalid">
+        Importar
+    </button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancelar</button>
+</div>

@@ -1,0 +1,22 @@
+extends auth
+
+block auth
+  form.signin.form-horizontal(action="/users/session", method="post")
+    .form-group
+      label.col-md-4.control-label(for='username') Usuario
+      .col-md-8
+        input#name.form-control(type='text', name="username", placeholder='Username')
+
+    .form-group
+      label.col-md-4.control-label(for='password') Password
+      .col-md-8
+        input#password.form-control(type='password', name="password", placeholder='Password')
+
+    .form-group
+      .col-md-offset-4.col-md-8
+        button.btn.btn-primary(type='submit') {{'TEXT_SING_UP' | translate}}
+        | &nbsp;
+        a.show-signup(href="/signup") {{'TEXT_SING_IN' | translate}}
+        | &nbsp;
+        a.show-signup(href="/signup") {{'TEXT_REC_USER' | translate}}
+        a.show-signup(href="/signup") {{'TEXT_REC_PASS' | translate}}

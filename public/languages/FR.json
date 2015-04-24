@@ -1,0 +1,26 @@
+{
+    "TEXTO_WELCOME": "Bienvenu {{username}}",
+    "HOME_VIEW_TEXT": "C'est l'écran d'accueil",
+    "ADMINISTRATION_TEXT": "Administration",
+    
+    "MENU_ARTICLES": "Article",
+    "MENU_ARTICLE_NEW": "Créer un Article",
+    "MENU_PRODUCTS": "Produits",
+    "MENU_PRODUCT_NEW": "Créer un Produit",
+    
+    "MENU_SIGNIN": "S'identifier",
+    "MENU_SIGNUP": "S'inscrire",
+    "MENU_SIGNOUT": "Quitter",
+    
+    "MENU_ADMINISTRATE": "Gérer",
+    "MENU_ADMIN_USERS": "Users",
+    
+    "BUTTON_TEXT_ES": "Spagnol | Español",
+    "BUTTON_TEXT_EN": "Anglais | English",
+    "BUTTON_TEXT_FR": "Français",
+    "BUTTON_TEXT_RO": "Roumain | Romaneste",
+    
+    "LABEL_INPUT_ARTICLE_TITLE": "Titre",
+    "LABEL_INPUT_ARTICLE_CONTENT": "Contentement",
+    "LABEL_INPUT_ARTICLE_SUBMIT": "Sauver"
+}

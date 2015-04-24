@@ -1,0 +1,23 @@
+<section data-ng-controller="QuinielasController" data-ng-init="find()">
+	<div class="row quiniela-list">
+		<div data-ng-repeat="quiniela in quinielas" class="col-md-11 well well-sm quiniela">
+			<span>{{quiniela.fxFecha | dateESLarge}}</span>
+			<h3>
+				<a data-ng-href="#!/quinielas/{{quiniela._id}}">
+					Jornada {{quiniela.inJornada}} ({{quiniela.fxFecha | dateES}})
+				</a>
+				<span class="bolder">&#8608;</span>
+				<span class="quiniela-short-resumen">{{quiniela.getShortResumen()}}</span>
+			</h3>
+			<h4>
+				<div>Precio Jugado: {{converPrice(quiniela.inPrecio)}} €</div>
+			</h4>
+			
+			<h3 ng-show="quiniela.objPremio" >¡Premio! ¡{{quiniela.objPremio.inCantidad}} €!</h3>
+		</div>
+	</div>
+	<div data-ng-hide="!quinielas || quinielas.length">
+		<h1>{{'NO_QUINIELAS_TEXT' | translate}}</h1>
+		<a href="/#!/quinielas/create" class="btn btn-default">Crear una quiniela</a>
+	</div>
+</section>

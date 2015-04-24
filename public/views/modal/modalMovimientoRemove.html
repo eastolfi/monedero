@@ -1,0 +1,36 @@
+<div class="modal-header">
+    <h3 class="modal-title">Realizar una Retirada</h3>
+</div>
+
+<div class="modal-body">
+    <form role="form form-inline" id="frm_retirar" name="form">
+        <div class="form-group">
+            <label for="md_mot_ret">Motivo de la Retirada</label>
+            <input type="text" ng-model="data.motivo" class="form-control" name="nMotivo" 
+                id="md_mot_ret" placeholder="Motivo de la Retirada" required>
+            <div ng-show="form.nMotivo.$dirty && form.nMotivo.$invalid">
+                <div class="alert alert-danger" role="alert" ng-show="form.nMotivo.$error.required">
+                    Por favor, introduce el motivo de la retirada
+                </div>
+            </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label for="md_can_ret">Cantidad a Retirar</label>
+            <input type="number" ng-model="data.cantidad" class="form-control" name="nCantidad"
+                id="md_can_ret" placeholder="Cantidad a Retirar" required>
+            <span class="glyphicon glyphicon-euro form-control-feedback"></span>
+            <div ng-show="form.nCantidad.$dirty && form.nCantidad.$invalid">
+                <div class="alert alert-danger" role="alert" ng-show="form.nCantidad.$error.required">
+                    Por favor, introduce un número válido
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()" ng-disabled="form.$invalid">
+        Retirar
+    </button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancelar</button>
+</div>

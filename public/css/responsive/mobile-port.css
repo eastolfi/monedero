@@ -1,0 +1,58 @@
+/* TEMPORAL */
+.responsive_tester {
+	background-color: red;
+}
+.responsive_tester .mp {
+    display: inline;
+    color: white;
+}
+/* TEMPORAL */
+
+/* General */
+.navbar-default .main-navbar> li > a:hover, .navbar-default .main-navbar > li > a:focus,
+.nav-lang> li > a:hover, .nav-lang > li > a:focus,
+.nav-user> li > a:hover, .nav-user > li > a:focus {
+	border-bottom: none;
+	box-shadow: inset 4px 0px #f8f8f8;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #444444;
+}
+
+.nav-lang, .nav-user {
+    float: none !important;
+}
+
+aside#right-menu {
+	display: none;
+}
+
+/* Index */
+article.main-content {
+	text-align: center;
+}
+
+/* Tours */
+article .tour-title div {
+	text-align: center;
+}
+
+/* Discography */
+article .song {
+	text-align: center;
+}
+
+/* Gallery */
+article.main-content {
+	text-align: center;
+}
+article .gallery-item {
+	display: inline;
+}
+
+/* Store */
+
+
+/* About */
+

@@ -1,0 +1,52 @@
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+
+    title= appName
+    meta(http-equiv='Content-type', content='text/html;charset=UTF-8')
+    meta(name="keywords", content="node.js, express, mongoose, mongodb, angularjs, quiniela, premio")
+    meta(name="description", content="Quinielas - Built with MEAN: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).")
+
+    link(href='/img/icons/favicon.ico', rel='shortcut icon', type='image/x-icon')
+    link(href="/humans.txt", rel="author", type="text/plain")
+
+    meta(property='fb:app_id', content='APP_ID')
+    meta(property='og:title', content='#{appName} - #{title}')
+    meta(property='og:description', content='Quinielas - Built with MEAN: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).')
+    meta(property='og:type', content='website')
+    meta(property='og:url', content='APP_URL')
+    meta(property='og:image', content='APP_LOGO')
+    meta(property='og:site_name', content='Quinielas Antonio')
+    meta(property='fb:admins', content='APP_ADMIN')
+
+    // Bootstrap
+    link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/lib/bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.min.css')
+    link(rel='stylesheet', href='/css/flaticon.css')
+
+    // Application Styles
+    link(rel='stylesheet', href='/css/icons.css')
+    link(rel='stylesheet', href='/css/views/general.css')
+
+    // Responsive
+
+    link(href="/css/responsive/mobile-port.css", rel="stylesheet",
+        media="only screen and (max-width: 479px)")
+    link(href="/css/responsive/mobile-land.css", rel="stylesheet",
+        media="only screen and (min-width: 480px) and (max-width: 599px)")
+    link(href="/css/responsive/tablet-small.css", rel="stylesheet",
+        media="only screen and (min-width: 600px) and (max-width: 767px)")
+    link(href="/css/responsive/tablet-port.css", rel="stylesheet",
+        media="only screen and (min-width: 768px) and (max-width: 991px)")
+    link(href="/css/responsive/tablet-land.css", rel="stylesheet",
+        media="only screen and (min-width: 992px) and (max-width: 1024px)")
+    link(href="/css/responsive/desktop.css", rel="stylesheet",
+        media="only screen and (min-width: 1025px) and (max-width: 1365px)")
+    link(href="/css/responsive/large-screen.css", rel="stylesheet",
+        media="only screen and (min-width: 1366px)")
+
+    link(rel='stylesheet', href='/css/views/admin.css')
+
+    //if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')

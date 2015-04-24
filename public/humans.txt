@@ -1,0 +1,67 @@
+/* humanstxt.org/ */
+/* The humans responsible & technology colophon */
+
+/* TEAM */
+	Chef: Eduardo Astolfi
+	Twitter: @eduardo_astolfi
+	From:Madrid, Madrid, Spain
+
+/* THANKS */
+
+	(First) EN Translator: Jos Flores
+	Twitter: @prosciuttos
+	From: Barcelona, Catalonia, Spain
+
+	CA Translator: Eva AC
+	Twitter: @evaac
+	From:Barcelona, Catalonia, Spain
+
+	EN Translator: Marta Armada
+	Twitter: @martuishere
+	From: Barcelona, Catalonia, Spain
+	
+	RU Translator: Alexey Bass
+	Twitter: @alexey_bass
+	Location: Israel, Netanya
+	
+	RU Translator: Vladimir Epifanov
+	Twitter: @voldmar
+	Location: Moscow, Russia
+	
+	NL Translator: Rowdy Rabouw
+	Twitter: @rowdyrabouw
+	Location: Gouda, The Netherlands
+	
+	DE Translator: Dennis Fischer
+	Twitter: @ichderfisch
+	Location: Düsseldorf / Germany
+	
+	CZ Translator: Daniel Kršiak
+	Twitter: @krsiakdaniel
+	Location: Czech Republic
+	
+	ZH Translator: Ana Villalba
+	Location: Spain
+	
+	JA Translator: Clémence Haure
+	Location: Spain
+	
+	FR Translator: Thibaud Desodt
+	Location: Belgium
+	
+	Media Queries by: Marta Armada (@martuishere) and Javier Usobiaga (@htmlboy)
+		
+
+/* SITE */
+	Last update:2012/02/04
+	Language: Català / Czech / Deutsch / English / Castellano / Japanese / Dutch / Russian / Chinese
+	Doctype:HTML5
+	IDE: Sublime Text, Notepad++, FileZilla, Photoshop
+
+
+/* TECHNOLOGY COLOPHON */
+
+    HTML5, CSS3,
+    jQuery:     http://jquery.com/,
+    Modernizr:  http://modernizr.com/,
+    MeanIO:     http://mean.io/#!/

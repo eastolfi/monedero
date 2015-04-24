@@ -1,0 +1,128 @@
+<section data-ng-controller="QuinielasController" data-ng-init="init()">
+	<form class="form-horizontal col-md-12" role="form" enctype="multipart/form-data" data-ng-submit="create()">
+		
+		<!-- Jornada de la quiniela -->
+		<div class="form-group col-md-3">
+			<label for="name" class="col-md-4 control-label">{{'LABEL_INPUT_QUINIELA_JORNADA' | translate}}</label>
+			<div class="col-md-8">
+				<input type="number" class="form-control" data-ng-model="inJornada" id="inJornada" 
+					placeholder="{{'LABEL_INPUT_QUINIELA_JORNADA' | translate}}" 
+					value="1" />
+			</div>
+		</div>
+		
+		<!-- Precio de la quiniela -->
+		<div class="form-group col-md-3">
+			<label for="name" class="col-md-4 control-label">Precio</label>
+			
+			<div class="col-md-8">
+			    <div class="input-group">
+                    <input type="number" class="form-control" data-ng-model="inPrecio"
+                        id="inPrecio" placeholder="128">
+                    <span class="input-group-addon">€</span>
+                </div>
+			</div>
+		</div>
+		
+		<!-- Fecha de la quiniela -->
+		<div class="form-group col-md-4">
+			<label for="name" class="col-md-4 control-label">Fecha</label>
+			<div class="col-md-8">
+    			<p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="fxFecha" 
+                        is-open="opened" min-date="'2014-01-01'" max-date="'2020-12-31'" show-weeks=false
+                        datepicker-options="dateOptions" date-disabled="disabled(date, mode)" 
+                        ng-required="true" close-text="Cerrar" id="fxFecha" placeholder="Fecha" />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="open($event)">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </button>
+                    </span>
+                </p>
+            </div>
+		</div>
+
+        <!-- Premio de la quiniela -->
+        <div class="form-group col-md-3">
+            <label for="name" class="col-md-4 control-label">¿Premio?</label>
+            <div class="col-md-8">
+                <input type="text" class="form-control" data-ng-model="idPremio" id="idPremio"
+                       placeholder="Premio" />
+            </div>
+        </div>
+
+        <!-- Importar una quiniela -->
+        <div class="form-group col-md-3">
+            <a class="btn btn-default" ng-click="importar()">Importar una quiniela</a>
+        </div>
+
+        <div class="match-info col-md-12" ng-repeat="n in [] | range:maxPartidos - 1">
+            <h4>Partido {{$index + 1}}:</h4>
+            <div class="form-group col-md-3 home">
+    			<div class="col-md-12">
+    				<input type="text" class="form-control" ng-model="partidosTmp[$index].txEquipo1"
+    					placeholder="Equipo de Casa" required />
+    			</div>
+    		</div>
+    		<div class="form-group col-md-2">
+    			<label for="name" class="col-md-9 control-label">Contra</label>
+    		</div>
+    		<div class="form-group col-md-3 visit">
+    			<div class="col-md-12">
+    				<input type="text" class="form-control" ng-model="partidosTmp[$index].txEquipo2"
+    					placeholder="Equipo Visitante" required />
+    			</div>
+    		</div>
+    		<div class="form-group col-md-5 result">
+    			<label for="name" class="col-md-3 control-label">Resultado</label>
+    			<div class="col-md-9">
+					<select class="form-control" required ng-model="partidosTmp[$index].txResultado"
+						ng-options="resultado.resCode as resultado.resText | translate for resultado in getResultados()">
+					    <option value="">Seleccione una opción</option>
+					</select>
+    			</div>
+    		</div>
+        </div>
+        <!-- Configuracion del pleno al 15 -->
+		<div class="match-info col-md-12">
+            <h4>Pleno al {{maxPartidos}}:</h4>
+            <div class="form-group col-md-3 home-pleno">
+    			<div class="col-md-12">
+    				<input type="text" class="form-control" ng-model="partidosTmp[maxPartidos-1].txEquipo1"
+    					placeholder="Equipo de Casa" required />
+    			</div>
+    		</div>
+            <div class="form-group col-md-2 home-result-pleno">
+    			<div class="col-md-12">
+    				<select class="form-control" ng-model="resultadoPlenoEq1" required
+    					ng-options="resultado.resCode as resultado.resText | translate for resultado in getResultadosPleno()">
+    					<option value="">Indica el número de goles</option>
+    				</select>
+    			</div>
+    		</div>
+    		<div class="form-group col-md-2">
+    			<label for="name" class="col-md-9 control-label">Contra</label>
+    		</div>
+    		<div class="form-group col-md-3 visit-pleno">
+    			<div class="col-md-12">
+    				<input type="text" class="form-control" ng-model="partidosTmp[maxPartidos-1].txEquipo2"
+    					placeholder="Equipo Visitante" required />
+    			</div>
+    		</div>
+    		<div class="form-group col-md-2 visit-result-pleno">
+    			<div class="col-md-12">
+    				<select class="form-control" ng-model="resultadoPlenoEq2" required
+    					ng-options="resultado.resCode as resultado.resText | translate for resultado in getResultadosPleno()">
+    					<option value="">Indica el número de goles</option>
+    				</select>
+    			</div>
+    		</div>
+        </div>
+        
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<button type="submit" class="btn btn-default">{{'LABEL_INPUT_SAVE' | translate}}</button>
+			</div>
+		</div>
+	</form>
+</section>

@@ -1,0 +1,93 @@
+/* TEMPORAL */
+.responsive_tester {
+	/*background-color: green;*/
+}
+.responsive_tester .tp {
+    display: inline;
+}
+/* TEMPORAL */
+
+/* General */
+
+.navbar-nav.nav.pull-right {
+    margin-right: 0px;
+}
+
+/*.navbar-default .main-navbar> li > a:hover, .navbar-default .main-navbar > li > a:focus {	*/
+	/*border-bottom: none;*/
+	/*box-shadow: inset 0px -2px #f8f8f8;*/
+/*}*/
+
+.nav-lang a.dropdown-toggle {
+    padding-bottom: 11px;
+}
+.navbar-nav>li>a {
+    /*padding-bottom: 18px;*/
+}
+
+article.main-content {
+	/*width: 58.33333333%;*/
+	/*float: left;*/
+}
+
+/*@media (max-width: 830px) {*/
+/*.nav.nav-social > li {*/
+	/*display: none;*/
+/*}*/
+/*.nav > li.dropdown.social-resp, .nav > li.dropdown.social-resp a , .nav > li.dropdown.social-resp span {*/
+	/*display: inline-block;*/
+/*}*/
+/*.nav > li.dropdown.social-resp .hidden-text {*/
+	/*font-size: 0.9em;*/
+	/*position: relative;*/
+	/*top: -10px;*/
+/*}	*/
+
+@media (max-width: 950px) {
+    .nav-lang {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .welcome_user {
+        display: none;
+    }
+    .welcome_user_resp {
+        display: inline;
+    }
+}
+
+@media (max-width: 805px) {
+    .nav>li>a {
+        padding: 15px 7px;
+    }
+}
+
+/* Index */
+article.main-content {
+	/*width: 58.33333333%;*/
+	/*float: left;*/
+}
+
+/* Tours */
+/*article .tour-title div {*/
+	/*text-align: center;*/
+/*}*/
+
+/* Discography */
+/*article .song {*/
+	/*text-align: center;*/
+/*}*/
+
+/* Gallery */
+/*article .gallery-item {*/
+	/*width: 41.66666667%;*/
+	/*display: inline;*/
+/*}*/
+
+/* Store */
+
+
+/* About */
+

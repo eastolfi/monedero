@@ -1,0 +1,283 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-afghanistan1:before {
+	content: "\e000";
+}
+.flaticon-albania1:before {
+	content: "\e001";
+}
+.flaticon-aruba1:before {
+	content: "\e002";
+}
+.flaticon-azerbaijan1:before {
+	content: "\e003";
+}
+.flaticon-belarus1:before {
+	content: "\e004";
+}
+.flaticon-belize1:before {
+	content: "\e005";
+}
+.flaticon-bolivia1:before {
+	content: "\e006";
+}
+.flaticon-bosnia1:before {
+	content: "\e007";
+}
+.flaticon-botswana1:before {
+	content: "\e008";
+}
+.flaticon-brazil1:before {
+	content: "\e009";
+}
+.flaticon-bulgaria1:before {
+	content: "\e00a";
+}
+.flaticon-cambodia1:before {
+	content: "\e00b";
+}
+.flaticon-costa1:before {
+	content: "\e00c";
+}
+.flaticon-croatia1:before {
+	content: "\e00d";
+}
+.flaticon-cuba1:before {
+	content: "\e00e";
+}
+.flaticon-czech1:before {
+	content: "\e00f";
+}
+.flaticon-denmark1:before {
+	content: "\e010";
+}
+.flaticon-dollar100:before {
+	content: "\e011";
+}
+.flaticon-dollar101:before {
+	content: "\e012";
+}
+.flaticon-dollar102:before {
+	content: "\e013";
+}
+.flaticon-dollar93:before {
+	content: "\e014";
+}
+.flaticon-dollar94:before {
+	content: "\e015";
+}
+.flaticon-dollar96:before {
+	content: "\e016";
+}
+.flaticon-dollar97:before {
+	content: "\e017";
+}
+.flaticon-dollar98:before {
+	content: "\e018";
+}
+.flaticon-dollar99:before {
+	content: "\e019";
+}
+.flaticon-dominican1:before {
+	content: "\e01a";
+}
+.flaticon-estonia1:before {
+	content: "\e01b";
+}
+.flaticon-euro30:before {
+	content: "\e01c";
+}
+.flaticon-ghana1:before {
+	content: "\e01d";
+}
+.flaticon-guatemala1:before {
+	content: "\e01e";
+}
+.flaticon-honduras1:before {
+	content: "\e01f";
+}
+.flaticon-hungary1:before {
+	content: "\e020";
+}
+.flaticon-iceland1:before {
+	content: "\e021";
+}
+.flaticon-india1:before {
+	content: "\e022";
+}
+.flaticon-indonesia1:before {
+	content: "\e023";
+}
+.flaticon-iran1:before {
+	content: "\e024";
+}
+.flaticon-israel1:before {
+	content: "\e025";
+}
+.flaticon-jamaica1:before {
+	content: "\e026";
+}
+.flaticon-kazakhstan1:before {
+	content: "\e027";
+}
+.flaticon-kyrgyzstan1:before {
+	content: "\e028";
+}
+.flaticon-laos1:before {
+	content: "\e029";
+}
+.flaticon-latvia1:before {
+	content: "\e02a";
+}
+.flaticon-lithuania1:before {
+	content: "\e02b";
+}
+.flaticon-macedonia1:before {
+	content: "\e02c";
+}
+.flaticon-malaysia1:before {
+	content: "\e02d";
+}
+.flaticon-mauritius1:before {
+	content: "\e02e";
+}
+.flaticon-mongolia1:before {
+	content: "\e02f";
+}
+.flaticon-mozambique1:before {
+	content: "\e030";
+}
+.flaticon-nepal1:before {
+	content: "\e031";
+}
+.flaticon-netherlands1:before {
+	content: "\e032";
+}
+.flaticon-nicaragua1:before {
+	content: "\e033";
+}
+.flaticon-nigeria1:before {
+	content: "\e034";
+}
+.flaticon-north5:before {
+	content: "\e035";
+}
+.flaticon-norway1:before {
+	content: "\e036";
+}
+.flaticon-oman1:before {
+	content: "\e037";
+}
+.flaticon-pakistan2:before {
+	content: "\e038";
+}
+.flaticon-panama1:before {
+	content: "\e039";
+}
+.flaticon-paraguay1:before {
+	content: "\e03a";
+}
+.flaticon-peru1:before {
+	content: "\e03b";
+}
+.flaticon-philippines1:before {
+	content: "\e03c";
+}
+.flaticon-poland1:before {
+	content: "\e03d";
+}
+.flaticon-pound12:before {
+	content: "\e03e";
+}
+.flaticon-qatar1:before {
+	content: "\e03f";
+}
+.flaticon-romania1:before {
+	content: "\e040";
+}
+.flaticon-rounded36:before {
+	content: "\e041";
+}
+.flaticon-russia1:before {
+	content: "\e042";
+}
+.flaticon-saudi1:before {
+	content: "\e043";
+}
+.flaticon-serbia1:before {
+	content: "\e044";
+}
+.flaticon-seychelles1:before {
+	content: "\e045";
+}
+.flaticon-somalia1:before {
+	content: "\e046";
+}
+.flaticon-south5:before {
+	content: "\e047";
+}
+.flaticon-south6:before {
+	content: "\e048";
+}
+.flaticon-sri2:before {
+	content: "\e049";
+}
+.flaticon-sweden2:before {
+	content: "\e04a";
+}
+.flaticon-switzerland1:before {
+	content: "\e04b";
+}
+.flaticon-taiwan1:before {
+	content: "\e04c";
+}
+.flaticon-thailand1:before {
+	content: "\e04d";
+}
+.flaticon-trinidad1:before {
+	content: "\e04e";
+}
+.flaticon-turkey1:before {
+	content: "\e04f";
+}
+.flaticon-turkey2:before {
+	content: "\e050";
+}
+.flaticon-ukraine1:before {
+	content: "\e051";
+}
+.flaticon-uruguay1:before {
+	content: "\e052";
+}
+.flaticon-uzbekistan1:before {
+	content: "\e053";
+}
+.flaticon-venezuela1:before {
+	content: "\e054";
+}
+.flaticon-viet:before {
+	content: "\e055";
+}
+.flaticon-yemen1:before {
+	content: "\e056";
+}
+.flaticon-yen19:before {
+	content: "\e057";
+}
+.flaticon-zimbabwe1:before {
+	content: "\e058";
+}

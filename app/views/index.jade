@@ -1,0 +1,6 @@
+extends layouts/default
+
+block content
+  .ng-view-wrapper(data-ng-view, style="display: inline-block; width: 100%;")
+  script(type="text/javascript").
+    window.user = !{user};

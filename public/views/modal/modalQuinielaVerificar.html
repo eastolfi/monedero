@@ -1,0 +1,38 @@
+<div class="modal-header">
+    <h3 class="modal-title">Verificar el Resultado del Partido</h3>
+</div>
+
+<div class="modal-body">
+    <form role="form form-inline" id="frm_ingresar" name="form">
+        <div class="form-group">
+            <div class="btn-group col-md-offset-4">
+                <label class="btn btn-success" ng-model="showIncorrect" btn-radio="0" 
+                    ng-change="data.result='OK'" >
+                    Correcto
+                </label>
+                <label class="btn btn-danger" ng-model="showIncorrect" btn-radio="1"
+                    ng-change="data.result=0" >
+                    Incorrecto
+                </label>
+            </div>
+            <div class="btn-group col-md-offset-1" ng-show="showIncorrect==1">
+                <label class="btn btn-primary" ng-model="data.result" btn-radio="'1'">
+                    {{'HOME_WIN' | translate}}
+                </label>
+                <label class="btn btn-primary" ng-model="data.result" btn-radio="'X'">
+                    {{'DRAW' | translate}}
+                </label>
+                <label class="btn btn-primary" ng-model="data.result" btn-radio="'2'">
+                    {{'VISITOR_WIN' | translate}}
+                </label>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()" ng-disabled="!data.result">
+        Guardar
+    </button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancelar</button>
+</div>

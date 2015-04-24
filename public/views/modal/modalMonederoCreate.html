@@ -1,0 +1,31 @@
+<div class="modal-header">
+    <h3 class="modal-title">Crear el Monedero</h3>
+</div>
+
+<div class="modal-body">
+    <form role="form form-inline" id="frm_ingresar" name="form">
+        <div class="form-group has-feedback">
+            <label for="md_can_ing">Por favor, introduce la cantidad que jugarás por jornada</label>
+            <input type="number" ng-model="data.cantidad" class="form-control" name="nCantidad"
+                id="md_can_ing" placeholder="Cantidad por Jornada" required min="1" >
+            <span class="glyphicon glyphicon-euro form-control-feedback"></span>
+
+            <div ng-show="form.nCantidad.$dirty && !form.nCantidad.$valid">
+                <div class="alert alert-danger" role="alert" ng-show="form.nCantidad.$error.required">
+                    Por favor, introduce un número válido
+                </div>
+                <div class="alert alert-danger" role="alert" 
+                    ng-show="form.nCantidad.$error.min && !form.nCantidad.$error.required">
+                    Por favor, introduce un número mayor que 0
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()" ng-disabled="form.$invalid">
+        Crear
+    </button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancelar</button>
+</div>

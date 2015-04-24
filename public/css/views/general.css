@@ -1,0 +1,343 @@
+html, body {
+	height: 100%;
+}
+
+.content-wrapper {	
+	height: 100%;
+	/*background-color: #ddd;*/
+	/*background-image: url(/img/space-wp.jpg);*/
+	/*background-size: cover;*/
+	/*color: #FFFFEE;*/
+
+	/*background-color: #222222;*/
+	/*color: #FFFFEE;*/
+}
+
+.main-content-wrapper {
+    height: 84%;
+}
+
+/************* Responsive Test *****************/
+.responsive_tester span p {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    border: 1px solid;
+    padding: 5px;
+}
+/*********** Fin Responsive Test ***************/
+
+.centered {
+    text-align: center;
+}
+
+.centered-v {
+	vertical-align: middle;
+}
+
+table.table_movimientos_pendientes tr td {
+	vertical-align: middle;
+}
+
+header .banner img {
+	height: 150px;
+}
+
+/* Fix para los stilos de ng-cloak cuando AngularJS no se carga en el HEAD */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+/****************************************************************/
+.font-20p {
+    font-size: 20px;
+}
+.bolder {
+    font-weight: bolder;
+}
+/****************************************************************/
+.navbar-nav.nav.pull-right {
+    margin-right: 25px;
+}
+/***********************/
+.navbar {
+	border-radius: 0px;
+}
+.navbar-default .main-navbar> li > a:hover, .navbar-default .main-navbar > li > a:focus,
+.navbar-default .nav-language> li > a:hover, .navbar-default .nav-language > li > a:focus{
+	border-bottom: none;
+	box-shadow: inset 0px -2px #f8f8f8;
+}
+
+ul.navbar-right li a {
+	display: inline;
+}
+ul.navbar-right li span.hidden-text {
+	display: none;
+}
+
+.nav-lang a.dropdown-toggle {
+    padding-bottom: 14px;
+}
+
+.welcome_user {
+    display: inline;
+}
+.welcome_user_resp {
+    display: none;
+}
+
+.lang_selector a.active {
+    font-style: italic;
+    color: black;
+}
+/*
+nav .icn-facebook.icn-lg:hover {
+	background-image: url(../../public/img/icons/blue-dark-hdpi.png);
+}
+nav .icn-soundcloud.icn-lg:hover {
+	background-image: url(../../public/img/icons/yellow-dark-hdpi.png);
+}
+nav .icn-bandcamp:hover {
+	background-image: url(../../public/img/icons/bandcamp-hover.png);
+}
+nav .icn-youtube.icn-lg:hover {
+	background-image: url(../../public/img/icons/red-dark-hdpi.png);
+}
+nav .icn-twitter.icn-lg:hover {
+	background-image: url(../../public/img/icons/blue-light-hdpi.png);
+}
+nav .icn-tumblr.icn-lg:hover {
+	background-image: url(../../public/img/icons/blue-dark-hdpi.png);
+}
+nav .icn-facebook.icn-md:hover {
+	background-image: url(../../public/img/icons/blue-dark-mdpi.png);
+}
+nav .icn-soundcloud.icn-md:hover {
+	background-image: url(../../public/img/icons/yellow-dark-mdpi.png);
+}
+nav .icn-bandcamp.icn-md:hover {
+	background-image: url(../../public/img/icons/bandcamp-hover.png);
+}
+nav .icn-youtube.icn-md:hover {
+	background-image: url(../../public/img/icons/red-dark-mdpi.png);
+}
+nav .icn-twitter.icn-md:hover {
+	background-image: url(../../public/img/icons/blue-light-mdpi.png);
+}
+nav .icn-tumblr.icn-md:hover {
+	background-image: url(../../public/img/icons/blue-dark-mdpi.png);
+}
+*/
+
+li.dropdown.social-resp {
+	display: none;
+}
+/**********************************************
+				QUINIELAS
+**********************************************/
+.quiniela {
+	margin-left: 4%;
+	margin-top: 1%;
+	color: #000000;
+}
+.quiniela .quiniela-short-resumen {
+	font-size: 18px;
+}
+/**********************************************
+			  FIN QUINIELAS
+**********************************************/
+
+article {
+	margin-top: 5px;
+}
+
+aside#right-menu {
+	/* 350 px ancho -> sale imagen */
+	position: absolute;
+	top: 51px;
+	top: 230px;
+	right: 30px;
+	border: 2px outset #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	padding: 5px;
+}
+
+hr { 
+	display: block; height: 1px;
+    border: 0; border-top: 1px solid #888888;
+    margin: 1em 0; padding: 0; 
+}
+
+footer {
+	text-align: center;
+	font-size: 0.8em;
+	margin-top: 30px;
+}
+
+/*
+footer .footer_divider {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+footer .icn-like:hover {
+	background-image: url(../../public/img/icons/blue-dark-mdpi.png);
+}
+footer .icn-twitter:hover {
+	background-image: url(../../public/img/icons/blue-light-mdpi.png);
+}
+*/
+
+/* Index */
+
+
+/* Tours */
+article .tour-title .title {
+	font-size: 1.3em;
+	position: relative;
+	top: 3px;
+}
+
+article .tour-title div {
+	height: 45px;
+}
+article .tour-title .share .title {
+	position: relative;
+	top: -10px;
+}
+article .tour-title .share a {
+	position: relative;
+	top: 0px;
+}
+.table-tour .table  {
+	text-align: center;
+}
+.table-tour .table tr:not(.table-header) td:first-child  {
+	text-align: left;
+}
+.table-tour .table tr.table-header  td {	
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* Override Bootstrap hover styles | customize download */
+.table-hover > tbody > tr.table-header:hover > td {
+	background-color: transparent;
+	color: #FFFFFF;
+}
+.table-hover > tbody > tr:not(.table-header):hover > td {
+	background-color: #BABABA;
+	color: #000000;
+}
+
+/* Discography */
+article .disc-title {
+	text-align: center;
+}
+article .row:not(.disc-title ) div:first-child {
+	margin-top: 10px;
+}
+
+article .disc-details {
+	margin-top: 50px;
+	text-align: center;
+}
+article .disc-details .original-price {
+	text-decoration: line-through;
+	font-size: 1.2em;
+	color: #E83333;
+}
+article .disc-details .disc-price {
+	margin-left: 5%;
+}
+article .disc-details .offer-price {
+	font-size: 1.5em;
+	margin-left: 10%;
+}
+
+article .song img[alt=loading] {
+	/*height: 42px;*/
+}
+article .song iframe {
+	display: none;
+	width: 100%;
+	height: 42px;
+	border: 0;
+}
+
+/* Gallery */
+.carousel-indicators li {
+	border-color: #000000
+}
+.carousel-item {
+    margin-left: 25%;
+}
+
+article .gallery-item {
+    margin-bottom: 15px;
+}
+article .gallery-item img {
+    box-shadow: 0 0 5px #c8c8c8;
+    /* box-shadow: 0 0 30px #c8c8c8; */
+    /* box-shadow: 3px 2px 5px #c8c8c8 */
+}
+
+article .gallery-item div {
+	text-align: center;
+}
+article .gallery-item img:hover {
+	cursor: pointer;
+}
+
+/* Store */
+.cart-list {
+    display: none;
+}
+.popover {
+    background-color: #888888;
+}
+.popover-title {
+    background-color: #585858;
+}
+.simple_cart {
+    position: absolute;
+    top: -130px;
+    left: 75%;
+}
+.simpleCart_shelfItem {
+    text-align: center;
+}
+.simpleCart_shelfItem h3 {
+    height: 52px;
+}
+.simpleCart_shelfItem .item_info img {
+    width: 100%;    /*256*/
+    display: block;
+    /*margin-left: 20%;*/
+    box-shadow: 0 0 5px #c8c8c8;
+}
+.simpleCart_shelfItem .item_info .item_Quantity {
+    color: black;
+    width: 35px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+
+/* About */
+article .bio-article p {
+	text-align: justify;
+}
+
+article .bio-article p img.inner-img {
+	width: 160px;
+}
+article .bio-article p img.inner-img.right {
+	float: right;	
+}
+article .bio-article p img.inner-img.left {
+	float: left;
+}

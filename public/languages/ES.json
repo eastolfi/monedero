@@ -1,0 +1,111 @@
+{
+    "TEXTO_WELCOME": "Bienvenid{{genreText}} {{username}}",
+    "HOME_VIEW_TEXT": "¡Bienvenido a la Peña de Antonio!",
+    "ADMINISTRATION_TEXT": "Administración",
+	
+	"NO_QUINIELAS_TEXT": "No se ha hecho ninguna quiniela aún",
+    "NO_ARTICLES_TEXT": "No hay ningún artículo.",
+    "NO_PRODUCTS_TEXT": "No hay ningún producto.",
+    
+    "MENU_INDEX": "Inicio",
+	"MENU_MONEDERO": "Monedero",
+	"MENU_MOVIMIENTOS_PEND": "Movimientos Pendientes",
+	"MENU_QUINIELAS": "Quinielas",
+	"MENU_QUINIELA_NEW": "Crear Quiniela",
+    
+    "MENU_ARTICLES": "Artículos",
+    "MENU_ARTICLE_NEW": "Crear Artículo",
+    "MENU_PRODUCTS": "Productos",
+    "MENU_PRODUCT_NEW": "Crear Producto",
+    
+    "MENU_SIGNIN": "Iniciar Sesión",
+    "MENU_SIGNUP": "Únete Ahora",
+    "MENU_SIGNOUT": "Cerrar Sesión",
+    
+    "MENU_ADMINISTRATE": "Administrar",
+    "MENU_ADMIN_USERS": "Usuarios",
+
+    "TEXT_SING_IN": "Iniciar Sesión",
+    "TEXT_SING_UP": "Registrarse",
+    "TEXT_REC_USER": "¿Olvidaste tu usuario?",
+    "TEXT_REC_PASS": "¿Olvidaste tu contraseña?",
+    
+    "DAY_1": "Lunes",
+    "DAY_2": "Martes",
+    "DAY_3": "Miércoles",
+    "DAY_4": "Jueves",
+    "DAY_5": "Viernes",
+    "DAY_6": "Sábado",
+    "DAY_0": "Domingo",
+    
+    "DAY_1_S": "Lun",
+    "DAY_2_S": "Mart",
+    "DAY_3_S": "Miér",
+    "DAY_4_S": "Juev",
+    "DAY_5_S": "Vier",
+    "DAY_6_S": "Sáb",
+    "DAY_0_S": "Dom",
+    
+    "MONTH_0": "Enero",
+    "MONTH_1": "Febrero",
+    "MONTH_2": "Marzo",
+    "MONTH_3": "Abril",
+    "MONTH_4": "Mayo",
+    "MONTH_5": "Junio",
+    "MONTH_6": "Julio",
+    "MONTH_7": "Agosto",
+    "MONTH_8": "Septiembre",
+    "MONTH_9": "Octubre",
+    "MONTH_10": "Noviembre",
+    "MONTH_11": "Diciembre",
+    
+    "MONTH_0_S": "Ene",
+    "MONTH_1_S": "Febr",
+    "MONTH_2_S": "Mar",
+    "MONTH_3_S": "Abr",
+    "MONTH_4_S": "May",
+    "MONTH_5_S": "Jun",
+    "MONTH_6_S": "Jul",
+    "MONTH_7_S": "Agos",
+    "MONTH_8_S": "Sept",
+    "MONTH_9_S": "Oct",
+    "MONTH_10_S": "Nov",
+    "MONTH_11_S": "Dic",
+    
+    "add": "Ingreso",
+    "remove": "Retiro",
+    
+    "BUTTON_TEXT_ES": "Español",
+    "BUTTON_TEXT_EN": "Inglés | English",
+    "BUTTON_TEXT_FR": "Francés | Français",
+    "BUTTON_TEXT_RO": "Rumano | Romaneste",
+    
+    "LABEL_INPUT_QUINIELA_JORNADA": "Jornada",
+    "LABEL_INPUT_ARTICLE_TITLE": "Título",
+    "LABEL_INPUT_ARTICLE_CONTENT": "Contenido",
+    "LABEL_INPUT_PRODUCT_NAME": "Nombre",
+    "LABEL_INPUT_PRODUCT_DESC": "Descripción",
+    "LABEL_INPUT_PRODUCT_PRICE": "Precio",
+    
+    "LABEL_INPUT_SAVE": "Guardar",
+    "LABEL_INPUT_CANCEL": "Cancelar",
+    
+    
+    "HOME_WIN": "Ganan en casa (1)",
+    "DRAW": "Empate (X)",
+    "VISITOR_WIN": "Ganan los visitanes (2)",
+    "HOME_WIN_DRAW": "Ganan en casa o empate (1X)",
+    "HOME_VISITOR_WIN": "Ganan en casa o los visitantes (12)",
+    "VISITOR_WIN_DRAW": "Ganan los visitantes o empate (X2)",
+    "HOME_VISITOR_WIN_DRAW": "Ganan en casa, los visitantes o empate (1X2)",
+    
+    "P0": "0",
+    "P1": "1",
+    "P2": "2",
+    "PM": "+3",
+    
+    "0_GOL": "0 goles",
+    "1_GOL": "1 gol",
+    "2_GOL": "2 goles",
+    "3_MORE_GOL": "3 o más goles"
+}

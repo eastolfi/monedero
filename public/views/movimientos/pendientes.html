@@ -1,0 +1,34 @@
+<section data-ng-controller="MovimientosController" data-ng-init="findPendientes()">
+	<div class="row quiniela-list">
+	
+		<alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">
+			{{alert.msg}}
+		</alert>
+    
+	    <table class="table table-bordered table_movimientos_pendientes">
+	        <th>
+	            <td>Usuario</td>
+	            <td>Tipo</td>
+	            <td>Concepto</td>
+	            <td>Cantidad</td>
+	            <td>Cantidad del Monedero</td>
+	            <td>Fecha</td>
+	            <td></td>
+	        </th>
+    		<tr data-ng-repeat="movimiento in movimientosPendientes">
+    		    <td class="centered">{{$index + 1}}</td>
+	            <td>{{movimiento.txUsuario}}</td>
+	            <td>{{movimiento.txTipo | translate}}</td>
+	            <td>{{movimiento.txConcepto}}</td>
+	            <td>{{movimiento.inCantidad}}</td>
+	            <td>{{movimiento.objMonedero.inTotal}}</td>
+	            <td>{{movimiento.fxFecha | dateES}}</td>
+	            <td style="width: 25%;">
+	            	<a class="btn btn-success" ng-click="verificar(movimiento)">Verificar</a>
+	            	<a class="btn btn-danger" ng-click="rechazar(movimiento)">Rechazar</a>
+            	</td>
+	        </tr>
+	    </table>
+	</div>
+	<h1 data-ng-hide="!quinielas || quinielas.length">{{'NO_QUINIELAS_TEXT' | translate}}</h1>
+</section>

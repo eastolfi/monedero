@@ -1,0 +1,21 @@
+<hr />
+<span class="author">
+	<em>Copyright © Eduardo Astolfi</em>
+	<!--<g:plusone></g:plusone>-->
+	<!--<a href="" class="icn-gplus_red_light icn-md"></a>-->
+</span>
+
+<!-- Seleccion de idioma -->
+<span class="lang_selector">
+    <a ng-repeat="item in pageLanguages" ng-click="changeLanguage(item.code)"
+       ng-class="{active: checkCurrentLanguage(item.code)}" translate="BUTTON_TEXT_{{item.code}}"></a>
+</span>
+<!--
+<span class="footer_divider icn-overflow icn-holo-dark icn-md"></span>
+
+<span class="share">
+	<a href="https://www.facebook.com/closetotheskyband"><span class="icn-like icn-white icn-md"></span></a>
+	<a href="https://twitter.com/cttsband"><span class="icn-twitter icn-white icn-md"></span></a>
+	<a href=""><span class="icn-heart icn-red-dark icn-md"></span></a>
+</span>
+-->

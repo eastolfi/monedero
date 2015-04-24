@@ -1,0 +1,62 @@
+<article class="main-content-nosidebar container-fluid col-md-12" data-ng-controller="MonederoController"
+    data-ng-init="findOne()" >
+    
+    <div ng-show="!monedero && show == true">
+        <h3>Aún no dispones de un monedero</h3>
+        <a class="btn btn-default" ng-click="openCrearMonedero()">Crear mi monedero</a>
+        <!--<a ng-show="global.user.admin" class="btn btn-info" href="#!/monederos">Ver lista de monederos</a>-->
+    </div>
+    
+    <div ng-show="monedero && show == true">
+        <h3>Esta es la situación de tu monedero</h3>
+        <table class="table table-bordered">
+            <th style="text-align: center">
+                <td>Movimiento</td>
+                <td>Fecha</td>
+                <td>Cantidad (antes del movimiento)</td>
+                <td>Total</td>
+            </th>
+            <tr ng-repeat="movimiento in movimientos">
+                <td style="text-align: center">#{{$index + 1}}</td>
+                <td>
+                    {{movimiento.txConcepto}}
+                    <span ng-if="movimiento.isValidado && movimiento.txMotivoRechazo === ''">
+                        <span style="color: #19B33F;" class="glyphicon glyphicon-ok" title="Movimiento verificado"></span>
+                    </span>
+                    <span ng-if="movimiento.isValidado && movimiento.txMotivoRechazo !== ''">
+                        <span style="color: #D63131;" class="glyphicon glyphicon-remove" title="Movimiento rechazado"></span>
+                        <a style="margin-left: 10px" href="" popover="{{movimiento.txMotivoRechazo}}" popover-trigger="mouseenter">
+                            Ver motivo del rechazo
+                        </a>
+                    </span>
+                    <span ng-if="!movimiento.isValidado">
+                        <span class="glyphicon glyphicon-time" title="Movimiento sin verificar"></span>
+                        <a href="" ng-show="global.user.admin">Verificar</a>
+                    </span>
+                </td>
+                <td>{{movimiento.fxFecha | dateES}}</td>
+                <td>{{getCantidadMovimiento(movimiento.inCantidad, movimiento.txTipo)}} €</td>
+                <td>{{movimiento.inCantidadMonedero}} €</td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Añadir una imagen? -->
+                </td>
+                <td>
+                    <a class="btn btn-success" ng-click="openMovimiento('add')">
+                        Ingresar&nbsp;
+                        <span class="glyphicon glyphicon-plus-sign"></span>
+                    </a>
+                    <a class="btn btn-danger" ng-click="openMovimiento('remove')">
+                        Retirar&nbsp;
+                        <span class="glyphicon glyphicon-minus-sign"></span></a>
+                </td>
+                <td colspan="1">Total del Monedero</td>
+                <td colspan="2">{{monedero.inTotal}} €</td>
+            </tr>
+        </table>
+    </div>
+</article>

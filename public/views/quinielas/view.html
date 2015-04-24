@@ -1,0 +1,61 @@
+<section data-ng-controller="QuinielasController" data-ng-init="findOne()">
+    <!-- Jornada de la quiniela -->
+	<div class="col-md-12">
+		<h3>{{'LABEL_INPUT_QUINIELA_JORNADA' | translate}} {{quiniela.inJornada}}</h3>
+	</div>
+	
+	<!-- Precio de la quiniela -->
+	<div class="col-md-3">
+		<span>Precio: {{quiniela.inPrecio}}</span>
+	</div>
+	
+	<!-- Fecha de la quiniela -->
+	<div class="col-md-3">
+		<span>Fecha: {{quiniela.fxFecha | dateES}}</span>
+	</div>
+	
+	<!-- Premio de la quiniela -->
+	<div class="col-md-3">
+		<span ng-show="quiniela.objPremio">
+			¡Ha tocado un premio de: {{quiniela.objPremio.inCantidad}} €!
+		</span>
+	</div>
+	
+	<div class="col-md-3" data-ng-show="global.user.admin">
+        <a class="btn" href="/#!/quinielas/{{quiniela._id}}/edit">
+        	<i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn" data-ng-click="remove();">
+            <i class="glyphicon glyphicon-trash"></i>
+        </a>
+    </div>
+	
+	<!-- Configuracion de los partidos -->
+	<div ng-class="{'col-md-6': $index < maxPartidos - 1, 'com-md-9 col-md-offset-3' : $index == maxPartidos - 1}" 
+		ng-repeat="partido in quiniela.partidos">
+		<div ng-show="$index < maxPartidos - 1">
+	        <span class="bolder col-md-3">Partido {{$index + 1}}:</span>
+	        <span class="col-md-9">
+	            {{partido.txEquipo1}} contra {{partido.txEquipo2}}: {{partido.txResultado}}
+	        </span>
+            <span ng-show="partido.isAcierto === true">
+                <span style="color: green;" class="glyphicon glyphicon-ok"></span>
+                Partido Acertado
+            </span>
+            <span ng-show="partido.isAcierto === false">
+                <span style="color: red;" class="glyphicon glyphicon-remove"></span>
+                Partido Fallado
+            </span>
+		</div>
+		<div ng-show="$index == maxPartidos - 1">
+	        <span class="bolder col-md-3">Pleno al {{$index + 1}}:</span>
+	        <span class="col-md-9">
+	            {{partido.txEquipo1}} contra {{partido.txEquipo2}}: 
+	            {{resultadoPlenoEq1 | translate}} &#8212; {{resultadoPlenoEq2 | translate}}
+	        </span>
+		</div>
+    </div>
+    <span class="col-md-12">
+        <a href="#!/quinielas" class="btn btn-default">Volver a la lista de Quinielas</a>
+    </span>
+</section>

@@ -1,0 +1,61 @@
+/* TEMPORAL */
+.responsive_tester {
+	background-color: lightgreen;
+}
+.responsive_tester .tl {
+    display: inline;
+}
+/* TEMPORAL */
+
+/* General */
+article.main-content {
+	/*width: 66.66666667%;*/
+}
+
+.navbar-nav>li>a {
+    padding-bottom: 18px;
+}
+
+@media (max-width: 1000px) {
+    .navbar-nav.nav.pull-right {
+        margin-right: 0px;
+    }
+}
+
+/********** Revisar */
+
+/*.nav.nav-social > li {*/
+	/*display: none;*/
+/*}*/
+/*.nav > li.dropdown.social-resp, .nav > li.dropdown.social-resp a , .nav > li.dropdown.social-resp span {*/
+	/*display: inline-block;*/
+/*}*/
+/*.nav > li.dropdown.social-resp .hidden-text {*/
+	/*font-size: 0.9em;*/
+	/*position: relative;*/
+	/*top: -10px;*/
+/*}*/
+
+/* Index */
+article.main-content {
+	/*width: 66.66666667%;*/
+}
+
+/* Tours */
+/*article .tour-title .title {*/
+	/*font-size: 1.2em;*/
+/*}*/
+
+/* Discography */
+
+
+/* Gallery */
+/*article .gallery-item {*/
+	/*width: 33.33333333%;*/
+/*}*/
+
+/* Store */
+
+
+/* About */
+

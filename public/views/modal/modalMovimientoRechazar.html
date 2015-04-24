@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <h3 class="modal-title">Rechazar Movimiento</h3>
+</div>
+
+<div class="modal-body">
+    <form role="form form-inline" id="frm_rechazar" name="form">
+        <div class="form-group">
+            <label for="md_mot_rec">Motivo del Rechazo</label>
+            <input type="text" ng-model="data.motivo" class="form-control" name="nMotivo" 
+                id="md_mot_rec" placeholder="Motivo del Rechazo" required>
+            <div ng-show="form.nMotivo.$dirty && form.nMotivo.$invalid">
+                <div class="alert alert-danger" role="alert" ng-show="form.nMotivo.$error.required">
+                    Por favor, introduce el motivo del rechazo
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()" ng-disabled="form.$invalid">
+        Confirmar
+    </button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancelar</button>
+</div>

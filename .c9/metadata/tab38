@@ -1,0 +1,1 @@
+{"filter":false,"title":"Server - Stopped","tooltip":"Server - Stopped","undoManager":{"mark":0,"position":-1,"stack":[]},"output":{"id":"output867300","width":898,"height":188,"scrollTop":25,"config":{"debug":true,"name":"Server","command":"node server.js","runner":"Shell command","env":{}}},"timestamp":1406873132420,"hash":"da39a3ee5e6b4b0d3255bfef95601890afd80709"}

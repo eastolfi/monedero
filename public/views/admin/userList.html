@@ -1,0 +1,20 @@
+<section data-ng-controller="UsersController" data-ng-init="find()">
+
+    <div ng-repeat="user in users" class="col-md-11 well well-sm quiniela">
+        <h3>{{user.name}}</h3>
+        <div class="col-md-1">Usuario: {{user.username}}</div>
+        <div class="col-md-1">
+            Administrador:
+            <input type="checkbox" ng-model="user.admin" class="checkUserAdmin" ng-init="initElements()" disabled />
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-success">Editar</a>
+            <a class="btn btn-warning">Bloquear</a>
+            <a class="btn btn-danger">Eliminar</a>
+        </div>
+    </div>
+
+	<h1 data-ng-hide="!users || users.length">No articles yet. <br> Why don't you <a href="/#!/articles/create">Create One</a>?</h1>
+
+    <a href="#!/admin">Volver</a>
+</section>

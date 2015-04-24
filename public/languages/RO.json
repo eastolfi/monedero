@@ -1,0 +1,27 @@
+{
+    "TEXTO_WELCOME": "Bine ai venit {{username}}!",
+    "HOME_VIEW_TEXT": "Aceasta este vizualizarea Acasă",
+    "ADMINISTRATION_TEXT": "Administrare",
+    
+    "MENU_ARTICLES": "Articole",
+    "MENU_ARTICLE_NEW": "Crea Articol",
+    "MENU_PRODUCTS": "Produs",
+    "MENU_PRODUCT_NEW": "Crea Produse",
+    
+    "MENU_SIGNIN": "Intrați în cont",
+    "MENU_SIGNUP": "Aderați acum",
+    "MENU_SIGNOUT": "Ieșiți din cont",
+    
+    "MENU_ADMINISTRATE": "Administra",
+    "MENU_ADMIN_USERS": "Users",
+    "MENU_ADMIN": "Administra",
+    
+    "BUTTON_TEXT_ES": "Spaniol | Español",
+    "BUTTON_TEXT_EN": "Englez | English",
+    "BUTTON_TEXT_FR": "Franceză | Français",
+    "BUTTON_TEXT_RO": "Român",
+    
+    "LABEL_INPUT_ARTICLE_TITLE": "Titlu",
+    "LABEL_INPUT_ARTICLE_CONTENT": "Conținut",
+    "LABEL_INPUT_ARTICLE_SUBMIT": "Salva"
+}
